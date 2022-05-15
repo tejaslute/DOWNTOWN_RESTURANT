@@ -11,8 +11,7 @@
 )
 ![Contact](![2022-05-15 (6)](https://user-images.githubusercontent.com/91754694/168462393-76efd41e-3850-4345-95cb-4e463d24b197.png)
 )
-![](![WhatsApp Image 2022-05-15 at 1 25 31 PM (1)](https://user-images.githubusercontent.com/91754694/168463055-452056ae-c381-4b31-b1ad-eda9aa04f69a.jpeg)
-)
+
 
 
 
