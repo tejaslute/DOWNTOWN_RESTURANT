@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Downtown Restaurant</title>
+
+  <!-- Css and Bootstrap -->
+  <link rel="stylesheet" href="contact.css">
+
+  <!-- Fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-1.12.4.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+    crossorigin="anonymous"></script>
+
+  <!-- Footer -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body style="background-color: black">
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow p-4 ">
+    <a class="navbar-brand" href="#"> <img src="Images/logo.jpg" alt="logo" class="rounded-circle" width="100"
+        height="80"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link hover-orange" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="menu.html">Our Menus</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="dining.html">Private Dining</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="account.html">Contact Us</a>
+        </li>
+        <li class="nav-item active">
+          <div class="button">
+            <a href="/logout"><button style="color: rgb(255, 251, 251);" class="scroller-btn1">Logout</button></a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Form Page -->
+  <section class="Form-Section">
+    <div class="contactUs">
+      <div class="title">
+        <h2>Get in Touch</h2>
+      </div>
+      <div class="box">
+        <!-- Form -->
+        <div class="contact form">
+          <h3>Reserve a Table!</h3>
+          <form name="myForm" method="post" action="/post" onsubmit="validateForm()">
+            <!-- Data will go to route post-->
+            <div class="formBox">
+              <div class="row50">
+                <div class="inputBox">
+                  <span>First Name</span>
+                  <input type="text" placeholder="e.g John" name="firstName">
+                </div>
+                <div class="inputBox">
+                  <span>Last Name</span>
+                  <input type="text" placeholder="e.g Doe" name="lastName">
+                </div>
+              </div>
+
+              <div class="row50">
+                <div class="inputBox">
+                  <span>Email</span>
+                  <input type="email" placeholder="e.g johndoe@email.com" name="email">
+                </div>
+                <div class="inputBox">
+                  <span>Mobile</span>
+                  <input type="text" placeholder="e.g +91 7266723675" name="mobile">
+                </div>
+              </div>
+
+              <div class="row50">
+                <div class="inputBox">
+                  <span>Date</span>
+                  <input type="date" style="color:#999" name="date">
+                </div>
+                <div class="inputBox">
+                  <span>Time</span>
+                  <input type="time" style="color:#999" name="time">
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="inputBox">
+                  <span>Table Requirement</span>
+                  <textarea name="table" placeholder="Write your Message here..."></textarea>
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="inputBox">
+                  <input type="submit" value="Book">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Info Box -->
+        <div class="contact info">
+          <h3 style="color: black;">Hotel Info</h3>
+          <br>
+
+          <div class="infoBox">
+            <div>
+              <span>
+                <ion-icon name="location"></ion-icon>
+              </span>
+              <span1>Pune India</span1>
+
+            </div>
+
+            <div>
+              <span>
+                <ion-icon name="mail"></ion-icon>
+              </span>
+              <a href="mailto: nilleakshay@gmail.com">nilleakshay@gmail.com </a>
+            </div>
+
+            <div>
+              <span>
+                <ion-icon name="call"></ion-icon>
+              </span>
+              <a href="tel: +91 8605831541">+91 9767333097</a>
+            </div>
+
+            <div>
+              <span>
+                <ion-icon name="mail"></ion-icon>
+              </span>
+              <a href="mailto: nilleakshay@gmail.com">tejaslute24@gmail.com </a>
+            </div>
+
+            <div>
+              <span>
+                <ion-icon name="call"></ion-icon>
+              </span>
+              <a href="tel: +91 8605831541">+91 8530024144</a>
+            </div>
+
+            <ul class="sci">
+              <li><a href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+              <li><a href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+              <li><a href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+              <li><a href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- MAp -->
+        <div class="contact map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d120987.80874662985!2d73.790302!3d18.62496!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x3bc2b90a1208db15%3A0x4b18590d359f529a!2sHindustan%20Petroleum%20Corporation%20Limited%2C%20S%20No%20251%2C%20Cts%20No%204492%2C%20Pimpri-Chinchwad%20Link%20Rd%2C%20Chinchwad%2C%20Pune%2C%20Maharashtra%20411033%2C%20India!3m2!1d18.6302557!2d73.7927227!5e0!3m2!1sen!2sus!4v1641711267626!5m2!1sen!2sus"
+            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container1">
+      <div class="row1">
+        <div class="footer-col">
+          <ul>
+            <img class="rounded-circle" src="Images/logo.jpg" alt="" height="60%" width="60%">
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>CONTACT US</h4>
+          <ul>
+            <li><a href="#"><i class="fas fa-phone" style="color: rgba(226, 210, 68, 0.582);"></i> +91 9767333097</a>
+            </li>
+            <li><a href="#"><i class="fas fa-envelope-open" style="color: rgba(226, 210, 68, 0.582);"></i>
+                nilleakshay@gmail.com</a></li>
+          </ul>
+          <ul>
+            <li><a href="#"><i class="fas fa-phone" style="color: rgba(226, 210, 68, 0.582);"></i> +91 8530024144</a>
+            </li>
+            <li><a href="#"><i class="fas fa-envelope-open" style="color: rgba(226, 210, 68, 0.582);"></i>
+                tejaslute24@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Orange Section -->
+  <div class="bottom-section">
+    <p>Copyright © Akshay & Tejas. All Rights Reserved.</p>
+  </div>
+  <script>
+    function validateForm() {
+      let x = document.forms["myForm"]["firstName"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+
+      let x1 = document.forms["myForm"]["lastName"].value;
+      if (x1 == "") {
+        alert("LastName must be filled out");
+        return false;
+      }
+
+      let x3 = document.forms["myForm"]["email"].value;
+      if (x3 == "") {
+        alert("Mail must be filled out");
+        return false;
+      }
+
+      let x4 = document.forms["myForm"]["mobile"].value;
+      if (x4 == "") {
+        alert("Number must be filled out");
+        return false;
+      }
+
+      let x5 = document.forms["myForm"]["date"].value;
+      if (x5 == "") {
+        alert("Date must be filled out");
+        return false;
+      }
+
+      let x6 = document.forms["myForm"]["time"].value;
+      if (x6 == "") {
+        alert("time  must be filled out");
+        return false;
+      }
+      let x7 = document.forms["myForm"]["table"].value;
+      if (x7 == "") {
+        alert("Table must be filled out");
+        return false;
+      }
+
+
+    }
+  </script>
+</body>
+
+</html>

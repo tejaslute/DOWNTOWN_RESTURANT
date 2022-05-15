@@ -1,0 +1,385 @@
+/* Navbar */
+
+.navbar-brand{
+    padding-left: 15%;
+}
+.navbar{
+    border-bottom: 2px solid black;
+	background-color: black;
+}
+.nav-item{
+    font-size: 25px;
+    font-weight:bold;
+    margin: auto;
+}
+.nav-link{
+    margin: 5px;
+}
+
+/* Button  */
+
+.scroller-btn1{
+	background-color: #0c0c0c;
+    text-emphasis-color: white;
+    padding: 2px 20px 2px 20px;
+    border:  none;
+    margin-left: 60px;
+    font-weight: bolder;
+}
+
+
+/* Form  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@500&display=swap'); 
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Forms and Contact */
+.Form-Section{
+	background: linear-gradient(90deg, #000000 0%, #000000 30%, #0a0a0a 30%, #000000 100%);
+	font-family: 'Poppins', sans-serif;
+}
+.contactUs{
+	position: relative;
+	width: 100%;
+	padding: 40px 100px;
+}
+.contactUs .title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+}
+.contactUs .title h2{
+	color: white;
+	font-weight: 500;
+}
+.form{
+	grid-area: form;
+}
+.info{
+	grid-area: info;
+}
+.map{
+	grid-area: map;
+}
+.contact{
+	padding: 40px;
+	background: #fff;
+	box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+.box{
+	position: relative;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 5fr 4fr;
+	grid-template-areas: 
+	"form info"
+	"form map";
+	grid-gap: 20px;
+	margin-top: 20px;
+	/* color: black; */
+}
+
+.contact h3{
+	color: black;
+	font-weight: 500;
+	font-size: 1.4rem;
+	margin-bottom: 10px;
+}
+
+/* Form */
+
+.formBox{
+	position: relative;
+	width: 100%;
+}
+.formBox .row50{
+	display: flex;
+	gap: 20px;
+}
+.inputBox{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	width: 50%;
+}
+
+.formBox .row100 .inputBox{
+	width: 100%;
+}
+
+.inputBox span{
+	color: red;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+.inputBox input{
+	padding: 10px;
+	font-size: 1.1em;
+	outline: none;
+	border: 1px solid #333;
+}
+.inputBox textarea{
+	padding: 10px;
+	font-size: 1.1em;
+	outline: none;
+	border: 1px solid #333;
+	resize: none;
+	min-height: 220px;
+	margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+	background:red;
+	color: #fff;
+	border: none;
+	font-size: 1.1em;
+	max-width: 120px;
+	font-weight: 500;
+	cursor: pointer;
+	padding: 14px 15px;
+}
+.inputBox ::placeholder{
+	color: #999;
+}
+
+/* Contact Us */
+
+.info h3{
+	color: #fff;
+}
+.info .infoBox div {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.info .infoBox div span
+{
+	min-width: 40px;
+	height: 40px;
+	color: #fff;
+	background:red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1em;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+.info .infoBox div p{
+	color: #fff;
+	font-size: 1.1em;
+}
+.info .infoBox div a{
+	color: #fff;
+	text-decoration: none;
+	color: black;
+	font-size: 0.9em;
+}
+.sci{
+	margin-top: 40px;
+	display: flex;
+}
+.sci li{
+	list-style: none;
+	margin-right: 15px;
+}
+.sci li a{
+	font-size: 1.5em;
+	margin-right: 15px;
+	color: #333;
+}
+.sci li a:hover{
+	color: red;
+}
+
+/* Google Map */
+
+.map{
+	padding: 0;
+}
+.map iframe{
+	width: 100%;
+	height: 100%;
+}
+
+/* /responsive/ */
+@media(max-width: 900px){
+	.info{
+		display: none;
+	}
+	.map{
+		display: none;
+	}
+	.form{
+		width: 90%;
+	}
+}
+@media(max-width: 767px){
+	.info{
+		display: none;
+	}
+	.map{
+		display: none;
+	}
+	.form{
+		width: 80%;
+	}
+}
+@media(max-width: 574px){
+	.info{
+		display: none;
+	}
+	.form{
+		width: 60%;
+	}
+}
+
+
+
+
+/* Footer - MAIN  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+h4{
+	font-size: larger;
+}
+.container1{
+	max-width: 1170px;
+	margin:auto;
+}
+.row1{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: rgba(221, 235, 144, 0.726);
+  	padding: 70px 0;
+  	margin-top: 5%;
+	background-color:black;
+}
+.footer-col{
+   width: 25%;
+   
+   
+}
+.footer-col h4{
+	font-size: 30px;
+	color: #56da15;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+	padding: 30px;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+	margin-left: 31px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #2cc4bc;
+	text-decoration: none;
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #d32020;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 5px 10px 23px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #16acd1;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/* /responsive/ */
+@media(max-width: 767px){
+	.footer-col{
+	  width: 60%;
+	  margin: auto;
+	  text-align: center;
+  }
+  .footer-col h4::before{
+	  content: '';
+	  position: absolute;
+	  left:0;
+	  bottom: -10px;
+	  background-color: #e91e63;
+	  height: 2px;
+	  box-sizing: border-box;
+	  width: 50px;
+	  margin-left: 45%;
+	
+  }
+  }
+  @media(max-width: 574px){
+	.footer-col{
+	  width: 60%;
+	  margin: auto;
+	  text-align: center;
+  }
+  .footer-col h4::before{
+	  content: '';
+	  position: absolute;
+	  left:0;
+	  bottom: -10px;
+	  background-color: #e91e63;
+	  height: 2px;
+	  box-sizing: border-box;
+	  width: 50px;
+	  margin-left: 45%;
+	
+  }
+  }
+.fas{
+	color: orange;
+}
+
+/* Bottom Orange Section */
+
+.bottom-section{
+	background-color: black;
+	font-family: var(--palette-font-9);
+	text-align: center;
+	position: absolute;
+	width: 100%;
+    color: #ffff;	
+}

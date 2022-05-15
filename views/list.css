@@ -1,0 +1,34 @@
+.navbar-brand{
+    padding-left: 40%;
+}
+
+/* Button  */
+
+.scroller-btn1{
+	background-color: #0a0a0a;
+    text-emphasis-color: white;
+    padding: 2px 20px 2px 20px;
+    border:  none;
+    margin-left: 150px;
+    font-weight: bolder;
+    
+}
+
+.centered1{
+	font-weight: bold;
+	font-size: 70px;
+	color: rgba(255, 255, 255, 0.788);
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  
+}
+.card-title{
+	color: blue;
+	padding-left: 60px;
+
+}
+.card-capa{
+	color: crimson;
+}
